@@ -1,59 +1,49 @@
 # Spotify
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.4.
+# 🎵 Spotify Clone (Angular)
 
-## Development server
+Clon de la interfaz web de **Spotify** desarrollado con **Angular 22** y **TypeScript**. Actualmente cuenta con la arquitectura base de diseño (*layout*) y los componentes principales maquetados.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🛠️ Tecnologías utilizadas
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* **Framework:** Angular `^22.0.0` (Standalone Components & Signals)
+* **Lenguaje:** TypeScript `~6.0.2`
+* **Estilos:** CSS3 (Flexbox)
+* **Testing:** Vitest `^4.0.8` & JSDOM
+* **Formateo de código:** Prettier `^3.8.1`
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📂 Estructura del proyecto
 
-```bash
-ng generate component component-name
-```
+```text
+src/
+└── app/
+    ├── components/
+    │   ├── header/      # Barra superior (Buscador)
+    │   ├── player/      # Barra inferior (Reproductor de audio)
+    │   └── sidebar/     # Barra lateral izquierda (Playlists y navegación)
+    ├── pages/
+    │   └── home/        # Vista principal (Inicio)
+    ├── app.config.ts    # Configuración global y enrutamiento
+    ├── app.routes.ts    # Definición de rutas
+    └── app.ts           # Componente raíz
+```[cite: 1]
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🚀 Requisitos previos
 
-## Building
+Asegúrate de tener instalado:
+* **Node.js** (versión LTS recomendada)
+* **npm** (`11.x` o superior)[cite: 1]
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 📦 Instalación y ejecución
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. **Instalar las dependencias:**
+   ```bash
+   npm install
